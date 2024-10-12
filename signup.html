@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sign Up</title>
+
+		<link rel="icon" type="image/x-icon" href="C:\Users\User\OneDrive - Ashesi University\Desktop\html stuff\icons8-cookie-100.png">
+		
+		<style>
+			#body-container {
+				display:flex;
+				flex-direction:row;
+				margin-top:100px;
+				background-color:white;
+				margin-top:10%;
+				margin-right:20%;
+				margin-left:20%;
+				height:500px;
+				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+			}
+
+			a {
+				text-decoration:none;
+			}
+
+			#content-container {
+				margin-top:10%;
+				height:80%;
+			}
+
+			input {
+				border:none;
+				border-bottom:1px solid;
+				outline:none;
+				font-size:16px;
+			}
+
+			#background-image {
+				position:absolute;
+				background-image:url("signup.jpeg");
+				background-size:cover;
+				background-position:center;
+				width:100%;
+				height:100%;
+				z-index:-1;
+				top:0%;
+				filter:blur(8px);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="background-image"></div>
+
+		<div id="body-container">
+			<section style="width:50%;">
+				<img src="signup.jpeg" width="100%" height="100%">
+			</section>
+
+			<section style="width:50%; height:100%; text-align:center;">
+				<div id="content-container">
+					<h1 style="font-size:40px;">Create Account</h1>
+
+					<form style="font-size:18px; color:grey;">
+						<label>
+							First Name <br>
+							<input type="text" id="username" required>
+						<label> <br>
+
+						<p>
+							<label>
+								Last Name <br>
+								<input type="text" id="username" required>
+							<label> <br>
+						</p>
+
+						<label>
+							Username <br>
+							<input type="text" id="username" required>
+						<label> <br>
+						
+						<p>
+							<label>
+								Email <br>
+								<input type="text" id="username" required>
+							<label> <br>
+						</p>
+
+						<label>
+							Password <br>
+							<input type="password" id="password" required>
+						<label> <br>
+						
+						<p>
+							<button type="submit">Sign Up</button> <br>
+			
+							<span>Already have an account?</span>
+							<a href="C:\Users\User\OneDrive - Ashesi University\Html Stuff\login.html">Login</a>
+						</p>
+					</form>
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>

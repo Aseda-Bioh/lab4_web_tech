@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="users.html">User Management</a></li>
+                    <li><a href="recipes.html">Recipe Management</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h2>User List</h2>
+                <button onclick="viewAllUsers()" class="btn btn-view-all">View All Users</button>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(1)" class="btn btn-view">View</button>
+                            <button onclick="editUser(1)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(1)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr id="2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(2)" class="btn btn-view">View</button>
+                            <button onclick="editUser(2)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(2)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr id="3">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(3)" class="btn btn-view">View</button>
+                            <button onclick="editUser(3)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(3)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr id="4">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(4)" class="btn btn-view">View</button>
+                            <button onclick="editUser(4)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(4)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="5">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(5)" class="btn btn-view">View</button>
+                            <button onclick="editUser(5)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(5)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="6">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(6)" class="btn btn-view">View</button>
+                            <button onclick="editUser(6)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(6)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="7">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(7)" class="btn btn-view">View</button>
+                            <button onclick="editUser(7)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(7)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="8">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(8)" class="btn btn-view">View</button>
+                            <button onclick="editUser(8)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(8)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="9">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(9)" class="btn btn-view">View</button>
+                            <button onclick="editUser(9)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(9)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr id="10">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button onclick="viewUser(10)" class="btn btn-view">View</button>
+                            <button onclick="editUser(10)" class="btn btn-edit">Edit</button>
+                            <button onclick="deleteUser(10)" class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="user-form" style="display:none;">
+                <h2>Edit User</h2>
+                <form id="edit-user-form">
+                    <input type="hidden" id="edit-user-id">
+                    <label for="edit-username">Name:</label>
+                    <input type="text" id="edit-username" required>
+                    <label for="edit-user-email">Email:</label>
+                    <input type="email" id="edit-user-email" required>
+                    <button type="submit" class="btn btn-save">Save Changes</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="users-script-file.js"></script>
+</body>
+</html>

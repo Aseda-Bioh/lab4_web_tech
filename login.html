@@ -1,0 +1,92 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>login</title>
+
+		<link rel="icon" type="image/x-icon" href="C:\Users\User\OneDrive - Ashesi University\Desktop\html stuff\icons8-cake-64.png">
+
+		<style>
+			#background-image {
+			      position:absolute;
+			      top:0%;
+			      left:0%; 
+			      background-image:url("bread-image.jpeg");
+			      background-size:cover;
+			      background-position: center;
+			      width:100%;
+			      height:100%;
+			      background-color:blue;
+			      z-index:-1;
+			      filter:blur(8px);	
+			}
+
+			#body-container {
+				display:flex;
+				flex-direction:row;
+				justify-content:space-evenly;
+				margin-top:100px;
+				background-color:white;
+				margin-top:10%;
+				margin-right:20%;
+				margin-left:20%;
+				margin-bottom:10%
+				height:400px;
+				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+				position:relative;
+				transform:translateY(-5%);
+			}
+
+			input {
+				border:none;
+				border-bottom:1px solid;
+				outline:none;
+				font-size:16px;
+			}
+	
+			label {
+				font-size:20px;
+				color:grey;
+			}
+
+			a {
+				text-decoration:none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="background-image"></div>
+
+		<div id="body-container">
+			<section style= "text-align:center; width:50%">
+				<h1 style="font-size:55px; font-family:Palatino,serif;">Welcome</h1>
+
+				<form>
+					<label>
+						Username/Email <br> 
+						<input type="text" id="username" height="50px" required>
+					<label> <br>
+				
+					<p>
+						<label>
+							Password <br> 
+							<input type="password" id="password" required>
+						<label> <br>
+					</p>
+
+					<button type="submit">Login</button> <br>
+				
+					<p>
+						Don't have an account?
+						<a href="C:\Users\User\OneDrive - Ashesi University\Html Stuff\signup.html">Create Account</a>
+					</p>
+				</form>
+			</section>
+
+			<section style="width:50%; height:450px;">
+				<img src="bread-image.jpeg" height="450px">
+			</section>
+		</div>
+	</body>
+</html>

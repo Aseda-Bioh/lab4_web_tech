@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<style>
+			body {
+				display:grid;
+				grid-template-rows:20% 50% 25%;
+				height:250vh;
+				margin:0;
+			}
+
+			#header {
+				grid-row-start:1;
+				grid-row-end:2;
+				background-image:url("header-section.jpeg");
+				background-size:cover;
+				background-repeat:no-repeat;
+				filter:blur(2px);
+				filter:contrast(10px);
+				position:relative;
+				z-index:-1;
+			}
+
+			#main-section {
+				grid-row-start:2;
+				grid-row-end:3;
+			}
+
+			#main-section {
+				grid-row-start:3;
+				grid-row-end:4;
+				margin-top:0px;
+			}
+
+			#dark-overlay {
+				margin:0;
+				height:369.2px;
+				grid-row-start:1;
+				grid-row-end:2;
+				width:1514px;
+				position:absolute;
+				background-color:rgba(0, 0, 0, 0.5);
+			}
+
+			nav {
+				grid-row-start:1;
+				grid-row-end:2;
+				color:white;
+				height:30px;
+				width:500px;
+				position:absolute;
+				text-align:center;
+				margin-left:1000px;
+				margin-right:100px
+				font-size:80px;
+				margin-top:20px
+			}
+
+			#top-section-content {
+				display:flex;
+				position:absolute;
+				color:white;
+				grid-row-start:1;
+				grid-row-end:2;
+				margin-left:570px;
+				margin-top:100px;
+				width:600px;
+				height:260px;
+			}
+		</style>
+	</head>	
+
+	<body>
+		<div id="dark-overlay"></div>
+		
+		<div id="top-section-content">
+			<section style="width:380px;">
+				<h1 style="margin-bottom:0px; margin-left:60px">Join Our Community</h1>
+				<span style="text-align:left; font-size:50px">Ashesi University</span>
+			</section>
+
+			<section>
+				<img src="ashesi-logo.jpeg" width="100px" height="100px">
+			</section>
+		</div>		
+
+		<nav>
+			Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			About us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Contact
+		</nav>
+
+		<div id="header" >
+		
+		</div>
+
+		<div id="main-section">
+			<p>Our campus, which blends modern architecture with traditional design, offers a beautiful and inspiring setting.</p>
+		</div>
+
+		<div id="footer">
+
+		</div>
+	</body>
+</html>
